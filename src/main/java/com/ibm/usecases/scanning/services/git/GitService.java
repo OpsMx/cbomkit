@@ -88,7 +88,7 @@ public final class GitService {
                     Git.cloneRepository()
                             .setProgressMonitor(getProgressMonitor())
                             .setURI(gitUrl.value())
-                            // .setBranch(revision.value())
+                            .setBranch(revision.value())
                             .setDirectory(scanCloneFile)
                             .setCredentialsProvider(getCredentialsProvider(credentials))
                             .call();
