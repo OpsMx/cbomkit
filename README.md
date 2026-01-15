@@ -21,11 +21,8 @@ Starting the CBOMkit using `docker-compose`.
 # clone the repository 
 git clone https://github.com/cbomkit/cbomkit
 cd cbomkit
-make build-backend-image
 # run the make command to start the docker compose 
 make production
-
-#and  to push to opsmx11, retag the built image of cbomkit-backend and push to opsmx11
 ```
 
 Alternatively, if you wish to use podman instead of docker, run the following:

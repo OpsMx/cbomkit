@@ -16,8 +16,7 @@
 # Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 services:
   backend:
-    # image: ghcr.io/cbomkit/cbomkit:${CBOMKIT_VERSION}
-    image: docker.io/library/cbomkit:${CBOMKIT_VERSION} # run "make build-backend-image" to build this image locally   
+    image: ghcr.io/cbomkit/cbomkit:${CBOMKIT_VERSION}
     depends_on:
       - db
     environment:
